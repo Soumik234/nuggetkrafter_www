@@ -580,7 +580,9 @@
 }
 .responsive-grid-container {
   display: grid;
-  grid-gap: 20px; /* Adjust the gap between items */
+  grid-gap: 20px; 
+  margin: auto; /* Centers the grid horizontally within its parent */
+  width: fit-content; /* Adjust the gap between items */
 }
 
 /* For screens larger than 1200px */
