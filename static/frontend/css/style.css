@@ -38,10 +38,10 @@
   transition: 0.5s;
   background-color: #4b0082;
   color: white;
-  margin-top: 10px;
+  margin-top: 0px; /* Adjust this value as needed to align the button */
   margin-right: 10px;
+  margin-bottom: 0px; /* May need adjustment based on your navbar's height */
 }
-
 .btn.btn-primary {
   color: white;
 }
@@ -89,8 +89,6 @@
 }
 
 .navbar .navbar-nav .nav-link {
-  margin-right: 30px;
-  padding: 20px 0;
   color: black;
   font-weight: 500;
   outline: none;
@@ -108,11 +106,9 @@
 
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
-    display: flex;
-    flex-basis: auto;
-    justify-content: flex-start; /* Align items to the left */
-    margin-right: 0;
-    padding: 8px 0;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: row !important;
   }
 
   .navbar .navbar-nav {
@@ -613,7 +609,7 @@
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Existing shadow */
-  background-color: rgba(0, 0, 0, 0.07); 
+  background-color: rgba(0, 0, 0, 0.07);
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -629,4 +625,24 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Adjust spacing between items */
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  flex-direction: row !important;
 }
