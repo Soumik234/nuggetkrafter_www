@@ -4,7 +4,7 @@
 <!-- Navbar End -->
 
 <!-- Carousel Start -->
-{% comment %}
+<!-- {% comment %}
 <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
   <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -24,7 +24,7 @@
     </div>
   </div>
 </div>
-{% endcomment %}
+{% endcomment %} -->
 <!-- Carousel End -->
 <div
   id="carouselExampleControls"
@@ -40,10 +40,10 @@
         style="height: 700px"
       />
       <div class="carousel-caption text-start top-0 start-0 overlay">
-        <div style="max-width: 900px; padding-left: 10rem;">
+        <div style="max-width: 900px; padding-left: 10rem; padding-top:10rem;">
           <h1 class="display-1 text-white mb-0 animated zoomIn">About Us</h1>
         </div>
-        <p class="text-left text-white" style="padding: 100px 250px 0 250px;">
+        <p class="text-left text-white" style="padding: 100px 250px 0 250px; ">
           Welcome to NuggetKrafters, your comprehensive solution for all your enterprise learning needs. We offer a robust Learning Management System (LMS) platform that caters to a wide range of enterprise requirements. From employee onboarding, sales team building, customer service, to cybersecurity and project delivery, our platform provides a seamless solution for various enterprise needs.
         </p>
       </div>
@@ -81,7 +81,10 @@
         <div style="max-width: 900px; padding-left: 10rem; padding-top: 10rem">
           <h1 class="display-1 text-white mb-0 animated zoomIn">About Us</h1>
         </div>
-        <p class="text-left" style="padding: 100px 250px 0 250px">
+        <p class="text-left" style="padding: 100px 250px 0 250px; 
+        @media (max-width: 768px){
+          padding: 0px 0px 0px 0px;
+        }">
           At NuggetKrafters, we believe in the power of learning. We are
           committed to providing solutions that not only meet your training
           needs but also contribute to the success of your organization. Join us
